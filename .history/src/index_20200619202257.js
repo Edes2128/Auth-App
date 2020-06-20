@@ -1,7 +1,9 @@
+// src/index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { Auth0Provider } from './context/auth0-context';
+import { Auth0Provider } from './contexts/auth0-context';
 
 ReactDOM.render(
   <Auth0Provider>

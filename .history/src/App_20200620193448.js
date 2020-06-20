@@ -4,7 +4,9 @@ import { Auth0Context } from './context/auth0-context'; // <-- new
 
 function App() {
 
-  const { isLoading, user, loginWithRedirect, logout } = useContext(Auth0Context);
+  const { isLoading, user, loginWithRedirect, logout } = useContext(
+    Auth0Context
+  );
 
   return (
     <div className="hero is-info is-fullheight">
