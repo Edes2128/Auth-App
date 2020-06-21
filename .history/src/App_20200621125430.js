@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'; 
+import React, { useContext } from 'react'; // <-- updated
 import 'bulma/css/bulma.css';
 import { Auth0Context } from './context/auth0-context';
 
@@ -26,7 +26,10 @@ function App() {
             {user.picture && <img src={user.picture} alt="My Avatar" />}
             <hr />
 
-            <button onClick={() => logout({ returnTo: window.location.origin })} className="button is-small is-dark">
+            <button
+              onClick={() => logout({ returnTo: window.location.origin })}
+              className="button is-small is-dark"
+            >
               Logout
         </button>
           </>

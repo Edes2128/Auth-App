@@ -26,7 +26,7 @@ function App() {
             {user.picture && <img src={user.picture} alt="My Avatar" />}
             <hr />
 
-            <button onClick={() => logout({ returnTo: window.location.origin })} className="button is-small is-dark">
+            <buttononClick={() => logout({ returnTo: window.location.origin })} className="button is-small is-dark">
               Logout
         </button>
           </>
